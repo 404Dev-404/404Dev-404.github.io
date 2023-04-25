@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Work+Sans:wght@500&display=swap');
+            body {
+                background-color: black;
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                font-family: 'Work Sans', sans-serif;
+                font-size: 4.6rem;
+                padding: 0px;
+            }
+
+            p, h2, li {
+                font-family: 'Fira Sans', sans-serif;
+            }
+
+            h2 {
+                font-size: 2rem;
+                font-style: italic;
+            }
+            
+            p {
+                font-size: 1.6rem;
+            }
+
+            .banner-one {
+                height: 50px;
+                background-color: #4E5166;
+                margin-left: 0px;
+            }
+
+            .banner-two {
+                height: 25px;
+                background-color: #657183;
+                margin-left: 0px;
+            }
+
+            .banner-three {
+                height: 12.5px;
+                background-color: #7C90A0;
+                margin-left: 0px;
+            }
+
+            .banner-four {
+                height: 8.3px;
+                background-color: #889AA9;
+                margin-left: 0px;
+            }
+
+            .banner-five {
+                height: 5.53px;
+                background-color: #9DABB8;
+                margin-left: 0px;
+            }
+
+            .gif {
+                margin: 4px;
+            }
+
+            .main {
+                margin: 20px;
+            }
