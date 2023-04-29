@@ -26,12 +26,9 @@ p {
 }
   
 @keyframes woble {
-    0% { transform: rotate(0deg) ; }
-    25% { transform: rotate(0.25deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(-0.25deg); }
-    100% { transform: rotate(0deg); }
-  }
+    0%, 100% { transform: rotate(0.25deg) translateY(3px); }
+    50% { transform: rotate(-0.25deg) translateY(-3px);}
+}
 
 .wordart.blues .text {
     font-family: Impact, sans-serif;
@@ -45,7 +42,7 @@ p {
 .wobble {
     transform: rotate(0deg);
     transform-origin: center;
-    animation: woble 3s infinite linear;
+    animation: woble 1.5s infinite ease-in-out;
 }
 
 .topnav {
