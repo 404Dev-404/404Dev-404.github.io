@@ -4,6 +4,14 @@ body {
     background-attachment: fixed;
 }
 
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 .wordart {
     font-family: Arial, sans-serif;
     font-size: 4em;
@@ -13,8 +21,16 @@ body {
     display: inline-block;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
   
+@keyframes woble {
+    0% { transform: rotate(0deg) ; }
+    25% { transform: rotate(0.25deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-0.25deg); }
+    100% { transform: rotate(0deg); }
+  }
+
 .wordart.blues .text {
     font-family: Impact, sans-serif;
     color: #99b3cb;
@@ -22,6 +38,12 @@ body {
     filter: progid:DXImageTransform.Microsoft.Glow(Color=#5b85aa,Strength=1);
     text-shadow: 0.13em -0.13em 0px #5b85aa;
     letter-spacing: -0.05em;
+}
+
+.wobble {
+    transform: rotate(0deg);
+    transform-origin: center;
+    animation: woble 3s infinite linear;
 }
 
 .topnav {
@@ -37,7 +59,6 @@ body {
     width: 225px;
     height: 100%;
     padding: 20px 0;
-    transition: all 0.5s ease;
 }
 
 .main {
@@ -46,4 +67,23 @@ body {
 
 .links {
     padding-left: 5.5%;
+}
+
+.links-padding {
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.left {
+    width: 45%;
+    float: left;
+}
+
+.right {
+    padding: 1.0%;
+    float: right;
+}
+
+p {
+    word-wrap: break-word;
 }
