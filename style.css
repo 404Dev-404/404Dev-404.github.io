@@ -1,64 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Work+Sans:wght@500&display=swap');
-            body {
-                background-color: black;
-                color: white;
-                margin: 0;
-                padding: 0;
-            }
+body {
+    background: linear-gradient(0deg, rgba(214,225,234,1) 0%, rgba(173,194,213,1) 20%, rgba(153,179,203,1) 36%, rgba(132,164,192,1) 52%, rgba(112,149,181,1) 68%, rgba(91,133,170,1) 84%, rgba(80,120,155,1) 100%);
+}
 
-            h1 {
-                font-family: 'Work Sans', sans-serif;
-                font-size: 4.6rem;
-                padding: 0px;
-            }
+.wordart {
+    font-family: Arial, sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+.wordart.blues .text {
+    font-family: Impact, sans-serif;
+    color: #99b3cb;
+    -webkit-text-stroke: 0.01em #5b85aa;
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=#5b85aa,Strength=1);
+    text-shadow: 0.13em -0.13em 0px #5b85aa;
+    letter-spacing: -0.05em;
+}
 
-            p, h2, li {
-                font-family: 'Fira Sans', sans-serif;
-            }
+.topnav {
+    background-color: #404040;
+    overflow: hidden;
+}
 
-            h2 {
-                font-size: 2rem;
-                font-style: italic;
-            }
-            
-            p {
-                font-size: 1.6rem;
-            }
+.wrapper .sidebar{
+    background: #adadad;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
 
-            .banner-one {
-                height: 50px;
-                background-color: #4E5166;
-                margin-left: 0px;
-            }
+.main {
+    padding-left: 225px;
+}
 
-            .banner-two {
-                height: 25px;
-                background-color: #657183;
-                margin-left: 0px;
-            }
-
-            .banner-three {
-                height: 12.5px;
-                background-color: #7C90A0;
-                margin-left: 0px;
-            }
-
-            .banner-four {
-                height: 8.3px;
-                background-color: #889AA9;
-                margin-left: 0px;
-            }
-
-            .banner-five {
-                height: 5.53px;
-                background-color: #9DABB8;
-                margin-left: 0px;
-            }
-
-            .gif {
-                margin: 4px;
-            }
-
-            .main {
-                margin: 20px;
-            }
+.links {
+    padding-left: 5.5%;
+}
