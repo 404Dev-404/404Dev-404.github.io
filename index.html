@@ -15,6 +15,11 @@
                     window.location.href = "./ie.html"
                 }
             }
+            
+            x = new Audio('sounds/PSJ_SE_00000.wav');
+            function yell() {
+                x.play();
+            }
 
             window.onload = redirectIfIE;
         </script>
@@ -46,7 +51,7 @@
                     <p>Hi, I'm 404. My preferred programming language is C. My favourite genres are Jazz and Drum and Bass.</p>
                 </div>
                 <div class="right">
-                    <img src="./sr20det.gif" title="it dance"></img>
+                    <img src="./sr20det.gif" title="it dance" onclick="yell()""></img>
                 </div>
             </div>
         </div>
