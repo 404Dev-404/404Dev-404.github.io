@@ -17,8 +17,19 @@
             }
             
             x = new Audio('sounds/PSJ_SE_00000.wav');
+            c = 0;
+            ye = true;
             function yell() {
-                x.play();
+                if (ye) {
+                    x.play();
+                    c++;
+                } else {
+                    alert("i will not allow you to click this image anymore");
+                }
+                if (c >= 50 && ye) {
+                    alert("please stop like actually what is wrong with you");
+                    ye = false;
+                }
             }
 
             window.onload = redirectIfIE;
