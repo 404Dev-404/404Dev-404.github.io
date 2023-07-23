@@ -1,0 +1,21 @@
+# welcome to my robots.txt
+# go away
+
+User-agent: AdsBot-Google
+User-agent: Googlebot-Image
+User-agent: Googlebot-News
+User-agent: Googlebot-Video
+User-agent: GoogleOther
+Disallow: /
+
+User-agent: *
+Disallow: /404.html
+Disallow: /AG-Roman.ttf
+Disallow: /iarfr34_v2.txt
+Disallow: /iarfr34.txt
+Disallow: /kidneystones.html
+Disallow: /ie.html
+Disallow: /favicon.ico
+Disallow: /vibri.blend
+Disallow: /images/
+Disallow: /sounds/
