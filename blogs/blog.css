@@ -1,0 +1,13 @@
+@font-face {font-family: "Akzidenz-Grotesk"; src: url('../fonts/ag-roman-webfont.woff') format("woff"); src: url("../fonts/ag-roman-webfont.ttf");}
+
+body {
+    background-color: rgb(129, 129, 129);
+}
+
+h1 {
+    font-family: Akzidenz-Grotesk, Helvetica, Arial, sans-serif;
+}
+
+.top_bar {
+    background-color: rgb(200, 200, 200);
+}
