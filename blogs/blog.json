@@ -1,7 +1,0 @@
-{
-    "post01": {
-        "title": "Test Post",
-        "date": "2023-07-24",
-        "content": "This is a test post dynamically generated from a JSON file. <b>html test</b>"
-    }
-}
