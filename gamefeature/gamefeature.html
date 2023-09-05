@@ -31,7 +31,6 @@ float pos_to_vol(vec3 a, vec3 b, float multiplier) {
     c.y = b.y - a.y;
     c.z = b.z - a.z;
     float c_mag = sqrt(pow(c.x, 2) + pow(c.y, 2) + pow(c.z, 2));
-    c_mag = truncf(c_mag);
     c_mag *= multiplier;
     return c_mag;
 }
