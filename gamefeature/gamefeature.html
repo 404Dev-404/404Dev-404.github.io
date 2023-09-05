@@ -1,0 +1,39 @@
+<!-- i put this through a markdown to html converter lmao -->
+
+<h1 id="game-feature-idea-i-had"><center>game feature idea i had</center></h1>
+<p>so a couple weeks ago i was thinking of like adaptive music in video games kinda like how in portal 2 in the levels with the gels where if you go fast enough the synth lead comes in for a bit and i thought it would be cool if that was in racing games and i&#39;ve thought a bit about that idea recently except kinda different</p>
+<p>this sentence is getting way too long so im just gonna explain the idea as concisely as possible</p>
+<p><strong><center>game feature idea: bgm with solo track where it&#39;s volume is based off of the player&#39;s speed in a certain section of a map (for example a bit of space above a ramp)</center></strong></p>
+<p>on the topic of thinking about game idea i came up with a way to implement this so here&#39;s some boring math if you like math scroll down or if you&#39;re lazy</p>
+<p>TL;DR: take the position of the player at time <strong>t</strong> and the position of the player at time <strong>t + &Delta;t</strong> (with <strong>&Delta;</strong> being a change of 1 frame [which i think means that the volume is dependent on frame rate]) and take the difference of both positions and use the magnitude as the volume</p>
+<p>that tl;dr was pretty long but the idea is pretty convoluted anyways so that is to be expected</p>
+<p>anyways if you&#39;re genuinely interested in this idea (which i&#39;d be happy to know considering nobody will ever read this) here&#39;s the poorly thought-out math</p>
+<p>let&#39;s say that inside a trigger above a ramp at time <strong>t</strong> the position of the player is [1, 1] and at time <strong>t + &Delta;t</strong> the position of the player is [3, 5]</p>
+<p>graphed out (not accounting for time or the z-axis assuming your game is in 3d which it would probably be in) it would look like this</p>
+<p>(i used Wolfram|Alpha to graph this my apologies)
+<img src="graph1.png" alt="a graph of (1, 1) to (3, 5)"></p>
+<p>let&#39;s have 2 vectors equivalent to both points</p>
+<p>a = [1, 1], b = [3, 5]</p>
+<p>how would we figure out a vector that starts at a&#39;s endpoint and ends at b&#39;s endpoint</p>
+<p>if you&#39;ve ever done anything involving linear algebra before this is a trivial task</p>
+<p>you simply subtract b from a (assuming b is always greater than a which is fine because a vector&#39;s magnitude can never be negative)</p>
+<p>so if the vector we are trying to find is c c would be</p>
+<p>c = b - a = [3, 5] - [1, 1] = [2, 4]</p>
+<p>now what we have to do is find c&#39;s magnitude</p>
+<p>||c|| = sqrt(c<sub>x</sub><sup>2</sup> + c<sub>y</sub><sup>2</sup>) = sqrt(2<sup>2</sup> + 4<sup>2</sup>) = sqrt(4 + 16) = sqrt(20) = ~4.47</p>
+<p>4.47 is a pretty low volume assuming your audio system uses a range of 1 to 100 for volume so you might want to multiply that by like 10 (4.47 * 10 = 44.7)</p>
+<p>anyways in c (which is the only programming language im kinda good at) that would be calculated like this (using 3d vectors this time because i was using 2d vectors to save time)</p>
+<pre><code>#include &lt;math.h&gt;
+
+float pos_to_vol(vec3 a, vec3 b, float multiplier) {
+    vec3 c;
+    c.x = b.x - a.x;
+    c.y = b.y - a.y;
+    c.z = b.z - a.z;
+    float c_mag = sqrt(pow(c.x, 2) + pow(c.y, 2) + pow(c.z, 2));
+    c_mag = truncf(c_mag);
+    c_mag *= multiplier;
+    return c_mag;
+}
+</code></pre>
+<p>anyways that&#39;s my game idea and how it would be implemented thank you for reading if you got to this point</p>
