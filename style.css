@@ -53,13 +53,13 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    width: 225px;
+    width: 325px;
     height: 100%;
     padding: 20px 0;
 }
 
 .main {
-    padding-left: 225px;
+    padding-left: 325px;
 }
 
 .links {
