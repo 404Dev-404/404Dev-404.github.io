@@ -10,6 +10,7 @@ h1 {
 
 p {
     font-family: Helvetica, Arial, sans-serif;
+    word-wrap: break-word;    
 }
 
 .wordart {
@@ -86,8 +87,4 @@ p {
 .right {
     padding: 1.0%;
     float: right;
-}
-
-p {
-    word-wrap: break-word;
 }
