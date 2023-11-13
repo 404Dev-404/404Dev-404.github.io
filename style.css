@@ -43,9 +43,13 @@ p {
     animation: wobble 1.5s infinite ease-in-out;
 }
 
+/* fun fact: .topnav was always meant to be in front of .sidebar so i fixed it */
+
 .topnav {
     background-color: #404040;
-    overflow: hidden;
+    /*overflow: hidden;*/ /* i have no idea what this line does so i commented out */
+    position: fixed;
+    width: 100%;
 }
 
 .wrapper .sidebar{
@@ -59,14 +63,17 @@ p {
 }
 
 .main {
+    padding-top: 65px;
     padding-left: 325px;
 }
 
 .links {
     padding-left: 5.5%;
+    padding-right: 5.5%;
 }
 
 .links-padding {
+    padding-right: 1%;
     padding-bottom: 1%;
     padding-top: 1%;
 }
