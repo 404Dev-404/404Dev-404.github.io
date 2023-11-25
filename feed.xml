@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+    <title>404's Super Cool Website</title>
+    <link>https://404.is-a.dev</link>
+    <description>The RSS Feed for 404's Super Cool Website</description>
+    <lastBuildDate>Sat, 25 Nov 2023 10:34 -0700</lastBuildDate>
+    <item>
+        <title>New RSS Feed</title>
+        <description>This is the first post in the new RSS feed. Detailed descriptions of website updates will be posted here.</description>
+        <link>https://404.is-a.dev</link>
+        <pubDate>Sun, 25 Nov 2023 10:34 -0700</pubDate>
+    </item>
+</channel>
+</rss>
