@@ -13,10 +13,10 @@ p {
     word-wrap: break-word;    
 }
 
+/* started using opera gx and apparently the bold font messes up the entire title in opera gx */
 .wordart {
     font-family: Arial, sans-serif;
     font-size: 4em;
-    font-weight: bold;
     position: relative;
     z-index: 1;
     display: inline-block;
