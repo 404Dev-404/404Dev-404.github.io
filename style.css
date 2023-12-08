@@ -53,14 +53,26 @@ p {
     width: 100%;
 }
 
-.wrapper .sidebar{
+.wrapper .sidebar {
     background: #adadad;
     position: fixed;
     top: 0;
     left: 0;
     width: 325px;
     height: 100%;
-    padding: 20px 0;
+    padding-top: 2.5%;
+}
+
+@media only screen and (max-width: 588px) {
+    .wrapper .sidebar {
+        background: #adadad;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 325px;
+        height: 100%;
+        padding-top: 18%; /* i love magic percentages that barely work */
+    }
 }
 
 .main {
