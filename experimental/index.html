@@ -12,25 +12,30 @@
 	<link rel="icon" href="./favicon.ico" sizes="any">
         <link rel="stylesheet" href="style.css">
         <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const warnElement = document.querySelector('.experimental_warn');
+
+                warnElement.addEventListener('click', function() {
+                    if (warnElement.style.display !== 'none') {
+                        warnElement.style.display = 'none';
+                    } else {
+                        warnElement.style.display = 'block';
+                    }
+                });
+            });
+
             sound = new Audio('sounds/PSJ_SE_00000.wav');
-            counter = 0;
-            yell_enabled = true;
             function yell() {
-                if (yell_enabled) {
-                    sound.play();
-                    counter++;
-                } else {
-                    alert("PETA has (forcefully) asked for me to prevent you from clicking the image.");
-                }
-                if (counter >= 50 && yell_enabled) {
-                    alert("PETA has (forcefully) asked for me to tell you to stop.");
-                    yell_enabled = false;
-                }
+                sound.play();
+                counter++;
             }
 
             window.onload = redirectIfIE;
         </script>
     </head>
+    <div class="experimental_warn">
+        <center><p>WARNING: This is an experimental redesign. The links do not work. To give feedback please go to <a href="https://forms.gle/KRJUrNz43cdByNN28">this form.</a> (CLICK TO HIDE)</p></center>
+    </div>
     <body>
         <div class="wrapper">
             <div class="sidebar">
@@ -42,7 +47,6 @@
                     <a href="./iarfr34_v2.txt" class="links-padding">NEW! Updated version of the IARFR34 License</a>
 		            <a href="./gamefeature/gamefeature.html" class="links-padding">no way 404 actually thinks of a good idea for once (no clickbait)</a>
                     <a href="./assorted_multimedia_files/index.html" class="links-padding">random videos and songs i've made</a>
-                    <a href="./experimental/index.html" class="links-padding">i may have watched too many videos on the frutiger aero design style</a>
                     <p>that's all the links man idk what to tell you</p>
                     <h1>BADGES</h1>
                     <a href="./feed.xml"><img src="images/rss.png"></img></a>
