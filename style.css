@@ -4,13 +4,17 @@ body {
     background-attachment: fixed;
 }
 
-h1 {
-    font-family: Helvetica, Arial, sans-serif;
+h1, h2 {
+    font-family: Cambria, serif;
 }
 
 p {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Candara, Arial, sans-serif;
     word-wrap: break-word;    
+}
+
+a {
+    font-family: Cambria, serif;
 }
 
 /* started using opera gx and apparently the bold font messes up the entire title in opera gx */
@@ -40,7 +44,7 @@ p {
 
 .wobble {
     transform: rotate(0deg);
-    transform-origin: center;
+    transform-origin: 293px 39px;
     animation: wobble 1.5s infinite ease-in-out;
 }
 
@@ -53,7 +57,7 @@ p {
     width: 100%;
 }
 
-@media only screen and (min-width: 589px) {
+@media only screen and (min-width: 588px) {
     .wrapper .sidebar{
         background: #adadad;
         position: fixed;
@@ -98,6 +102,11 @@ p {
     float: left;
 }
 
+.left-solo {
+    width: 75%;
+    float: left;
+}
+
 .right {
     padding: 1.0%;
     float: right;
@@ -108,4 +117,10 @@ p {
     height: 100%;
     object-fit: contain;
     padding-top: 2.5%;
+}
+
+.home-link {
+    font-family: Cambria;
+    text-decoration: none;
+    color: -moz-hyperlinktext;
 }
