@@ -51,7 +51,8 @@ a {
 /* fun fact: .topnav was always meant to be in front of .sidebar so i fixed it */
 
 .topnav {
-    background-color: #404040;
+    /*background-color: #404040;*/
+    background-image: linear-gradient(to right, rgba(64, 64, 64, 1) 0%, rgba(64, 64, 64, 0) 75%);
     /*overflow: hidden;*/ /* i have no idea what this line does so i commented out */
     position: fixed;
     width: 100%;
